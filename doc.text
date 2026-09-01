@@ -6,3 +6,6 @@ git branch -M main
 git remote add origin https://github.com/CSE-17-dipshikha/FSDBACKEDCSE-16.git
 git push -u origin main
 git stauts
+git log:no. of commit
+git branch
+git clone url
