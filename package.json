@@ -1,0 +1,10 @@
+{
+  "name": "assignment-3",
+  "version": "1.0.0",
+  "description": "HTTP PUT method to update user ID",
+  "main": "httpserver.js",
+  "type": "module",
+  "scripts": {
+    "start": "node httpserver.js"
+  }
+}
