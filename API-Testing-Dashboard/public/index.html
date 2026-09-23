@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>API Testing Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <h1>API Testing Dashboard</h1>
+
+    <p class="subtitle">
+        Test your Express REST API without Postman
+    </p>
+
+
+    <!-- Request Section -->
+
+    <div class="request-row">
+
+
+        <select id="method">
+
+            <option value="GET">GET</option>
+
+            <option value="POST">POST</option>
+
+            <option value="PUT">PUT</option>
+
+            <option value="DELETE">DELETE</option>
+
+        </select>
+
+
+        <input
+            type="text"
+            id="url"
+            value="http://localhost:3000/user"
+        >
+
+
+        <button onclick="sendRequest()">
+
+            Send Request
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- Request Body -->
+
+    <div id="bodySection">
+
+
+        <h2>Request Body</h2>
+
+
+        <textarea id="requestBody">{
+    "name": "Rahul Kumar",
+    "email": "rahul@gmail.com",
+    "college": "ABES",
+    "branch": "CSE",
+    "year": 2
+}</textarea>
+
+
+    </div>
+
+
+
+    <!-- Response -->
+
+    <h2>Response</h2>
+
+
+    <div class="response-box">
+
+        <pre id="response">Response will appear here...</pre>
+
+    </div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
